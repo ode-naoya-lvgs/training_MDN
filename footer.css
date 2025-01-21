@@ -1,0 +1,216 @@
+/*CSSリセット*/
+li {
+    list-style: none;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*広告欄*/
+.advertise {
+    height: 50px;
+}
+
+
+header {
+    height: 70px;
+}
+
+.header-contens {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0 5%;
+}
+
+/*header上部*/
+.header-upper {
+    display: flex;
+    height: 60%;
+}
+
+/*header上部の左側*/
+.header-left {
+    display: flex;
+    height: 100%;
+    width: 70%;
+}
+
+/*header-icon*/
+.header-icon {
+    height: 30px;
+    padding: 5px;
+}
+
+.header-icon > img {
+    height: 100%;
+}
+
+/*header-menu*/
+.header-menu {
+    height: 100%;
+    padding: 0;
+}
+
+.header-menu > ul {
+    display: flex;
+    height: 100%;
+}
+
+.header-menu > ul > li {
+    display: flex;
+    margin: auto 10px;
+    padding: auto;
+}
+
+/*header上部の右側*/
+.header-right {
+    display: flex;
+    height: 100%;
+    width: 30%; 
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.header-right > ul {
+    display: flex;
+}
+
+.header-right > ul > li {
+    margin: auto 10px;
+    padding: auto;
+}
+
+
+/*header部ナビバー*/
+nav {
+    background-color: lightgray;
+    display: flex;
+    height: 30%;
+}
+.breadcrumb-tails {
+    display: flex;
+}
+.lang-serect {
+    margin: 0 0 0 auto;   
+}
+
+.lang-serect > p {
+    padding: 0;
+}
+
+
+
+/*本文*/
+.mainpart {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*サイドバー*/
+.sidebar-left {
+    background-color: aqua;
+    width: 20%;
+}
+
+.sticky {
+    position: sticky;
+    top: 10%;
+}
+
+.main {
+    background-color: azure;
+    width: 60%;
+    margin: 0 5%;
+}
+
+.sidebar-right {
+    background-color: blueviolet;
+    width: 20%;
+}
+
+
+/*footer*/
+footer {
+    width: 10%;
+    padding: 10%;
+}
+
+/*footer-upper*/
+.upper-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.upper-footer > .links {
+    width: 100%;
+    padding: 5%;
+}
+
+.contents {
+    margin: 0 5px;
+}
+
+.logoes {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logoes > a {
+    width: 10%;
+}
+
+.logoes > a > img {
+    width: 100%;
+}
+
+
+/*help improve MDNのところ*/
+.help {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #F9F9FB;
+}
+
+
+
+
+/*footer-footer*/
+
+.footer-footer > .upper {
+    display: flex;
+}
+
+.mozilla-logo {
+    width: 10%;
+}
+
+.mozilla-logo > a {
+    width: 100%;
+}
+
+.mozilla-logo > a > img {
+    width: 100%;
+}
+
+.footer-footer > .upper > .links {
+    margin: auto 10px;
+}
+
+.footer-footer > .upper > .links > a {
+    margin: 5px;
+}

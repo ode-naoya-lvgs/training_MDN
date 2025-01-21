@@ -1,0 +1,487 @@
+/*CSSリセット*/
+li {
+    list-style: none;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+/*広告欄*/
+.advertise {
+    height: 3.5rem;
+    background-color: orange;
+}
+
+
+.communities {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: #E8F3FD;
+    color: #0085F2;
+    border-left: 2px solid #078BF3;
+    border-radius: 5px;
+    margin: 2em 15rem;
+    vertical-align: middle;
+}
+
+.communities a::before {
+    content: "ℹ️";
+    margin: 0 1rem;
+}
+
+/*headerのスタイル*/
+header {
+    height: 6rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #FFFFFF;
+}
+
+.header-contens {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0 15rem;
+}
+
+/*header上部*/
+.header-upper {
+    display: flex;
+    height: 4rem;
+}
+
+/*header上部の左側*/
+.header-left {
+    display: flex;
+    height: 3rem;
+    margin: auto 0;
+}
+
+/*header-icon*/
+.header-icon {
+    height: 100%;
+    display: flex;
+}
+
+.header-icon > img {
+    width: 10rem;
+    margin: auto 0;
+}
+
+/*header-menu*/
+.header-menu {
+    height: 100%;
+    padding: 0;
+}
+
+.header-menu > ul {
+    display: flex;
+    height: 100%;
+}
+
+.header-menu > ul > li {
+    display: flex;
+}
+
+.pulldown {
+    position: relative;
+}
+
+.point {
+    margin: auto 1rem;
+}
+
+.pulldown:hover {
+    background-color: #FFDBE0;
+}
+
+.pulldown-list {
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    width: 18rem;
+    background-color: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    border-radius: 0.5rem;
+}
+
+.pulldown-list li:hover {
+    background-color: #F9F9FB;
+}
+
+.pulldown:hover .pulldown-list{
+    top:100%;
+    visibility: visible;
+}
+
+.pulldown-list h3 {
+    font-size: 0.7rem;
+}
+
+.pulldown-list p{
+    font-size: 0.5rem;
+}
+.item {
+    padding: 1rem;
+}
+
+/*ドロップダウン内部アイテムの左bourder*/
+
+.red-border {
+    border-left: red 0.2rem  solid;
+    padding: 0 1rem;
+}
+
+.blue-border {
+    border-left: blue 0.2rem solid;
+    padding: 0 1rem;
+}
+
+
+.brown-border {
+    border-left: #AFA100 0.2rem solid;
+    padding: 0 1rem;
+}
+
+.green-border {
+    border-left: green 0.2rem solid;
+    padding: 0 1rem;
+}
+
+.purple-border {
+    border-left: purple 0.2rem solid;
+    padding: 0 1rem;
+}
+
+.gree-border {
+    border-left: gray 0.2rem solid;
+    padding: 0 1rem;
+}
+
+/*header上部の右側*/
+.header-right {
+    display: flex;
+    height: 3rem;
+    justify-content: flex-end;
+    margin: auto 0 auto auto;
+}
+
+.header-right > ul {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin: auto;
+}
+
+.header-right > ul > li {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.search {
+    position: relative;
+    justify-content: end;
+}
+
+.search-window {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 2rem;
+    border: #B8B8B8 1px solid;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.search-window:focus {
+    width: 15rem;
+}
+
+.search-window::placeholder {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0069C2;
+}
+
+.search-button {
+    position: absolute;   
+    right: 0.5rem;
+    top: 0.4rem;
+    height: 1.2rem;
+}
+
+.cansel {
+    position: absolute;
+    right: 2rem;
+    top: 0.4rem;
+    height: 1.2rem;
+    visibility: hidden;
+}
+
+.search-window:focus + .cansel {
+    visibility: visible;
+}
+
+.login {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.sign-up {
+    background-color: black;
+    color: white;
+    margin: 0 1rem;
+    border-radius: 5px;
+}
+
+.sign-up div {
+    text-align: center;
+    margin: 0 1.2rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+/*header部ナビバー*/
+nav {
+    background-color: #F9F9FB;
+    height: 2rem;
+    border: #CDCDCD 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+.nav-contents {
+    display: flex;
+    width: 100%;
+    padding: 0 15rem;
+}
+
+.breadcrumb {
+    display: flex;
+}
+
+.breadcrumb ul {
+    display: flex;
+}
+
+
+.breadcrumb li:not(:last-child)::after {
+    content: ">";
+    margin: 0 0.5rem;
+}
+
+.lang-serect {
+    margin: 0 0 0 auto;   
+}
+
+.lang-serect > p {
+    padding: 0;
+}
+
+
+
+/*本文*/
+.mainpart {
+    display: flex;
+    justify-content: center;
+    padding: 0 13%;
+}
+
+
+/*サイドバー*/
+.sidebar-left {
+    width: 20%;
+}
+
+.sticky {
+    position: sticky;
+    top: 10%;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.redpaint {
+    background-color: #FFDBE0;
+    border-left: #D30038 2px solid;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1rem;
+}
+
+details li {
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.main {
+    width: 60%;
+    margin: 0 5%;
+}
+
+.sidebar-right {
+    width: 20%;
+}
+
+.sidebar-right h2 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding: 2.5rem 0 1rem 0;
+    margin: -2rem 0 0 0;
+}
+
+.sidebar-right ol {
+    border-left: gray 2px solid;
+}
+
+.sidebar-right li {
+    font-size: 0.8rem;
+}
+
+.sidebar-right li:hover {
+    color: #0085F2;
+}
+
+/*ページ内リンクでジャンプ先のheader分の調整のため*/
+.anchor {
+    padding-top: 4rem;
+    margin-top: -4rem;
+}
+
+.outline a {
+    padding: 0.8rem 1rem;
+    display: block;
+}
+
+
+
+
+/*footer*/
+footer {
+    padding: 0 13%;
+    color: #4E4E4E;
+    border-top: 1px solid #4E4E4E;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+
+/*footer-upper*/
+.upper-footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.upper-footer  .links {
+    width: 30%;
+    margin: 0 auto 0 0;
+}
+
+.logoes {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.logoes > a {
+    width: 20px;
+    margin: 0 auto 0 0;
+}
+
+.logoes > a > img {
+    width: 100%;
+}
+
+.links  h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.links p {
+    font-size: 15px;
+}
+
+.contents {
+    margin: 0 5px;
+    width: 250px;
+}
+
+.contents p {
+    margin: 0 0 12px 0;
+}
+
+.contents h2 {
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+
+/*help improve MDNのところ*/
+.help {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #F9F9FB;
+}
+
+
+
+/*footer-footer*/
+
+.upper {
+    display: flex;
+    height: 70px;
+}
+
+.mozilla-logo {
+    margin: auto 0;
+}
+
+.mozilla-logo  a  img {
+    width: 120px;
+}
+
+.footer-footer > .upper > .links {
+    margin: auto 10px;
+    font-size: 10px;
+}
+
+.footer-footer > .upper > .links > a {
+    margin: 5px;
+}
+
+.footer-footer a {
+    text-decoration: underline;
+}
+
+.footer-footer .message {
+    margin: 2rem 0;
+    font-size: 10px;
+}
