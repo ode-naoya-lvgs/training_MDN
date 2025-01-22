@@ -1,5 +1,14 @@
 
 
+
+
+# 1/22
+**メモ**
+- placeholderにアニメーションは追加できない模様
+    - [stack overflow](https://stackoverflow.com/questions/78501681/adding-css-animations-such-that-the-placeholder-text-appear-as-if-its-being-typ)
+    
+
+
 # 1/20
 ## 入力中のカーソル
  文字入力していて縦棒が点滅し、入力中を示すものをキャレットと呼ぶ。語源は不足、欠落があるを意味するラテン語のcarereとのこと。
