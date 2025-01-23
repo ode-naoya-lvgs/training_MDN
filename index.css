@@ -339,10 +339,18 @@ nav {
 
 .sticky {
     position: sticky;
-    top: 10%;
+    top: 6.5rem;
     overflow-y: scroll;
-    height: 100vh;
 }
+
+.sidebar-left-content {
+    position: sticky;
+    top: 2.5rem;
+    overflow: scroll;
+    height: 52rem;
+    margin-top: 1rem;
+}
+
 
 .redpaint {
     background-color: #FFDBE0;
