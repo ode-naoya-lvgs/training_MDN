@@ -348,7 +348,6 @@ nav {
     top: 2.5rem;
     overflow: scroll;
     height: 52rem;
-    margin-top: 1rem;
 }
 
 
@@ -476,9 +475,36 @@ footer p {
 .help {
     border: 1px solid black;
     border-radius: 10px;
-    background-color: #F9F9FB;
+    background: no-repeat top right url(help.png), #F9F9FB;
+    margin: 3rem 0;
 }
 
+.help h1 {
+    margin: 1rem;
+    font-weight: 599;
+}
+.help p {
+    margin: 0 1rem;
+}
+
+.help a {
+    color: #0069C2;
+}
+
+.button-list {
+    padding: 1rem;
+}
+
+.help button {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 0.3rem;
+    border: black 1px solid;
+}
+
+.help .message {
+    margin: 3rem 0 1rem 0;
+}
 
 
 /*footer-footer*/
