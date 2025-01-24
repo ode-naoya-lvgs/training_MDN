@@ -14,8 +14,6 @@ p {
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
     cursor: pointer;
 }
 
@@ -25,6 +23,10 @@ html {
 
 body {
     margin: 0;
+}
+
+code {
+    background-color: #F2F1F1;
 }
 
 /*広告欄*/
@@ -43,7 +45,12 @@ body {
     border-left: 2px solid #078BF3;
     border-radius: 5px;
     margin: 2em 15rem;
-    vertical-align: middle;
+    vertical-align: middle; 
+}
+
+.communities a {
+    text-decoration: none;
+    color: #0069C2;
 }
 
 .communities a::before {
@@ -58,6 +65,11 @@ header {
     top: 0;
     z-index: 10;
     background-color: #FFFFFF;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
 }
 
 .header-contens {
@@ -273,7 +285,6 @@ header {
 
 .sign-up {
     background-color: black;
-    color: white;
     margin: 0 1rem;
     border-radius: 5px;
 }
@@ -283,6 +294,10 @@ header {
     margin: 0 1.2rem;
     font-size: 0.75rem;
     font-weight: bold;
+}
+
+.sign-up a {
+    color: white;
 }
 
 /*header部ナビバー*/
@@ -368,8 +383,57 @@ details li {
     margin: 0 5%;
 }
 
+.main a {
+    color: #5E9DD6;
+}
+
+
+/*help improve MDNのところ*/
+.help {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: no-repeat top right url(help.png), #F9F9FB;
+    margin: 3rem 0;
+}
+
+.help h1 {
+    margin: 1rem;
+    font-weight: 599;
+}
+.help p {
+    margin: 0 1rem;
+}
+
+.help a {
+    color: #0069C2;
+}
+
+.button-list {
+    padding: 1rem;
+}
+
+.help button {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 0.3rem;
+    border: black 1px solid;
+}
+
+.help .message {
+    margin: 3rem 0 1rem 0;
+}
+
+
+
+
+
 .sidebar-right {
     width: 20%;
+}
+
+.sidebar-right a {
+    text-decoration: none;
+    color: black;
 }
 
 .sidebar-right h2 {
@@ -393,8 +457,8 @@ details li {
 
 /*ページ内リンクでジャンプ先のheader分の調整のため*/
 .anchor {
-    padding-top: 4rem;
-    margin-top: -4rem;
+    padding-top: 6rem;
+    margin-top: -6rem;
 }
 
 .outline a {
@@ -414,6 +478,11 @@ footer {
 
 footer p {
     font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #525252;
 }
 
 
@@ -470,41 +539,6 @@ footer p {
     margin: 0 0 15px 0;
 }
 
-
-/*help improve MDNのところ*/
-.help {
-    border: 1px solid black;
-    border-radius: 10px;
-    background: no-repeat top right url(help.png), #F9F9FB;
-    margin: 3rem 0;
-}
-
-.help h1 {
-    margin: 1rem;
-    font-weight: 599;
-}
-.help p {
-    margin: 0 1rem;
-}
-
-.help a {
-    color: #0069C2;
-}
-
-.button-list {
-    padding: 1rem;
-}
-
-.help button {
-    height: 2rem;
-    width: 5rem;
-    border-radius: 0.3rem;
-    border: black 1px solid;
-}
-
-.help .message {
-    margin: 3rem 0 1rem 0;
-}
 
 
 /*footer-footer*/
