@@ -374,7 +374,11 @@ nav {
     margin: 0 0 0 auto;   
 }
 
-.lang-serect > p {
+.lang-serect p::before {
+    content: "🌏";
+}
+
+.lang-serect  p {
     padding: 0;
 }
 
