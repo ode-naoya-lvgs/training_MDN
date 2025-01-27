@@ -403,6 +403,18 @@ nav {
     margin: 1rem 0;
 }
 
+.filter label {
+    cursor: pointer;
+}
+
+#filter {
+    appearance: none;
+}
+
+#filter:checked + .filter-window {
+    width: 15rem;
+}
+
 .filter-window {
     width: 5rem;
     height: 2rem;
