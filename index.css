@@ -371,10 +371,11 @@ nav {
 }
 
 .lang-serect {
-    margin: 0 0 0 auto;   
+    margin: 0 0 0 auto;
+    position: relative;
 }
 
-.lang-serect p::before {
+.lang-serect > p::before {
     content: "🌏";
 }
 
@@ -382,6 +383,19 @@ nav {
     padding: 0;
 }
 
+
+.lang-menu {
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+    width: 14rem;
+    border: black 1px solid;
+    background-color:#C4C4C4;
+}
+
+.lang-serect:hover .lang-menu {
+    visibility: visible;
+}
 
 
 /*本文*/
