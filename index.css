@@ -358,6 +358,28 @@ nav {
     overflow-y: scroll;
 }
 
+.filter {
+    margin: 1rem 0;
+}
+
+.filter-window {
+    width: 5rem;
+    height: 2rem;
+    border: #C4C4C4 1px solid;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+.filter-window:focus {
+    width: 15rem;
+    border: red 2px solid;
+}
+
+.filter-window::after {
+    content: "adjojo";
+}
+
+
 .sidebar-left-content {
     position: sticky;
     top: 2.5rem;
