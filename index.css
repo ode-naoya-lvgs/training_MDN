@@ -215,6 +215,47 @@ header a {
     margin: 0 0.5rem;
 }
 
+.thunder-icon {
+    width: 1rem;
+}
+
+
+.theme-serect {
+    position: relative;
+}
+
+.theme-serect-list {
+    position: absolute;
+    top: 2rem;
+    visibility: hidden;
+    background-color: #F9F9FB;
+    border: #CDCDCD 1px solid;
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+
+.theme-serect-list li {
+    padding: 0.5rem 1rem;
+}
+
+.theme-serect-list li:hover {
+    background-color: #696969;
+}
+
+
+.theme-serect:active .theme-serect-list  {
+    visibility: visible;
+}
+
+.light::before {
+    content: "☀️";
+}
+
+.dark::before {
+    content: "🌙";
+}
+
 .search {
     position: relative;
     justify-content: end;
@@ -375,9 +416,6 @@ nav {
     border: red 2px solid;
 }
 
-.filter-window::after {
-    content: "adjojo";
-}
 
 
 .sidebar-left-content {
