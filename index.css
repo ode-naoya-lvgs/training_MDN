@@ -471,6 +471,10 @@ nav {
     margin: 0.8rem 0;
 }
 
+.sidebar-left-content summary:hover {
+    cursor: pointer;
+}
+
 
 .redpaint {
     background-color: #FFDBE0;
@@ -554,6 +558,15 @@ details li {
 .main a {
     color: #5E9DD6;
 }
+
+.main h1 {
+    font-size: 2.3rem;
+}
+
+.main p {
+    margin: 2rem 0;
+}
+
 
 
 /*help improve MDNのところ*/
