@@ -280,25 +280,6 @@ header a {
     color: #0069C2;
 }
 
-.search-window:focus + .search-window::placeholder {
-    animation: blink 1s infinite
-}
-
-
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    51% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 .search-button {
     position: absolute;   
@@ -419,6 +400,7 @@ nav {
 
 .filter {
     margin: 1rem 0;
+    position: relative;
 }
 
 .filter label {
@@ -438,12 +420,23 @@ nav {
     height: 2rem;
     border: #C4C4C4 1px solid;
     border-radius: 1rem;
-    padding: 0 1rem;
+    padding: 0 0 0 1rem;
+}
+
+
+.filter-window::placeholder {
+    padding-left: 0.3rem;
 }
 
 .filter-window:focus {
     width: 15rem;
     border: red 2px solid;
+}
+
+.filter img {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
 }
 
 
