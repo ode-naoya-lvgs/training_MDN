@@ -461,7 +461,55 @@ details li {
     margin: 1rem 0;
 }
 
+
+
+/*sidebar-right*/
+
+.sidebar-right {
+    order: 2;
+    width: 20%;
+}
+
+.sidebar-right a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-right h2 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding: 2.5rem 0 1rem 0;
+    margin: -2rem 0 0 0;
+}
+
+.sidebar-right ol {
+    border-left: gray 2px solid;
+}
+
+.sidebar-right li {
+    font-size: 0.8rem;
+}
+
+.sidebar-right li:hover {
+    color: #0085F2;
+}
+
+/*ページ内リンクでジャンプ先のheader分の調整のため*/
+.anchor {
+    padding-top: 6rem;
+    margin-top: -6rem;
+}
+
+.outline a {
+    padding: 0.8rem 1rem;
+    display: block;
+}
+
+
+/*本文のところ*/
+
 .main {
+    order: 1;
     width: 60%;
     margin: 0 5%;
 }
@@ -509,45 +557,6 @@ details li {
 
 
 
-
-.sidebar-right {
-    width: 20%;
-}
-
-.sidebar-right a {
-    text-decoration: none;
-    color: black;
-}
-
-.sidebar-right h2 {
-    font-weight: normal;
-    font-size: 1.2rem;
-    padding: 2.5rem 0 1rem 0;
-    margin: -2rem 0 0 0;
-}
-
-.sidebar-right ol {
-    border-left: gray 2px solid;
-}
-
-.sidebar-right li {
-    font-size: 0.8rem;
-}
-
-.sidebar-right li:hover {
-    color: #0085F2;
-}
-
-/*ページ内リンクでジャンプ先のheader分の調整のため*/
-.anchor {
-    padding-top: 6rem;
-    margin-top: -6rem;
-}
-
-.outline a {
-    padding: 0.8rem 1rem;
-    display: block;
-}
 
 
 
