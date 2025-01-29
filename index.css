@@ -29,6 +29,10 @@ code {
     background-color: #F2F1F1;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /*広告欄*/
 .advertise {
     height: 3.5rem;
@@ -223,14 +227,18 @@ header a {
     margin: 0 0.5rem;
 }
 
-.thunder-icon {
-    width: 1rem;
-}
+
 
 
 .theme-serect {
     position: relative;
 }
+
+
+.theme-serect::before {
+    content: "🌗";
+}
+
 
 .theme-serect-list {
     position: absolute;
@@ -254,6 +262,10 @@ header a {
 
 .theme-serect:active .theme-serect-list  {
     visibility: visible;
+}
+
+.OSdefault::before {
+    content: "🌗";
 }
 
 .light::before {
@@ -450,7 +462,7 @@ nav {
 }
 
 
-.yes-button::after {
+.yes-button::before {
     content: "👍";
 }
 
@@ -459,7 +471,7 @@ nav {
 }
 
 
-.no-button::after {
+.no-button::before {
     content: "👎";
 }
 
