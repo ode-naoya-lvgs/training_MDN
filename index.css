@@ -535,17 +535,6 @@ details li {
     color: #0085F2;
 }
 
-/*ページ内リンクでジャンプ先のheader分の調整のため*/
-.anchor {
-    padding-top: 6rem;
-    margin-top: -6rem;
-}
-
-.outline a {
-    padding: 0.8rem 1rem;
-    display: block;
-}
-
 
 /*本文のところ*/
 
@@ -563,9 +552,60 @@ details li {
     font-size: 2.3rem;
 }
 
+.main h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.main h3 {
+    font-weight: lighter;
+}
+
+.main h4 {
+    font-weight: lighter;
+    padding-left: 2em;
+}
+
 .main p {
     margin: 2rem 0;
 }
+
+
+
+/*ページ内リンクでジャンプ先のheader分の調整のため*/
+.anchor {
+    padding-top: 6rem;
+    margin-top: -6rem;
+    color: black;
+}
+
+
+.anchor a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.anchor a:hover {
+    text-decoration: underline;
+}
+
+.anchor a:hover::before {
+    content: "#";
+    color: #696969;
+    font-size: 0.6em;
+    position: absolute;
+    left: -0.7em;
+    top: 0.4em;
+}
+
+.outline a {
+    padding: 0.8rem 1rem;
+    display: block;
+}
+
+
+
 
 
 
@@ -587,6 +627,7 @@ details li {
 
 .help a {
     color: #0069C2;
+    text-decoration: none;
 }
 
 .button-list {
