@@ -376,15 +376,65 @@ nav {
 .lang-menu {
     position: absolute;
     right: 0;
-    visibility: hidden;
+    visibility: visible;
     width: 14rem;
     border: black 1px solid;
-    background-color: #C4C4C4;
+    background-color: #F9F9FB;
 }
 
 .lang-serect:hover .lang-menu {
     visibility: visible;
 }
+
+
+.lang-menu div {
+    border-bottom: black 1px solid;
+    margin: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.lang-menu p {
+    display: flex;
+}
+
+
+#toggle {
+    display: none;
+}
+
+.remember-lang {
+    border: black 1px solid;
+    padding: 0 1.2rem;
+    display: block;
+    border-radius: 1rem;
+    position: relative;
+    background-color: #4E4E4E;
+    transition: 0.4s;
+    height: 1.1rem;
+}
+
+.remember-lang::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border: black 1px solid;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    transition: 0.4s;
+}
+
+#toggle:checked + .remember-lang {
+    background-color: #0069C2;
+}
+
+#toggle:checked + .remember-lang::before {
+    left: 1.2rem;
+}
+
+
 
 
 /*本文*/
