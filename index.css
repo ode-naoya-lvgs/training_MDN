@@ -453,7 +453,7 @@ nav {
     position: sticky;
     top: 2.5rem;
     overflow: scroll;
-    height: 52rem;
+    max-height: 52rem;
     font-size: 0.8rem;
 }
 
