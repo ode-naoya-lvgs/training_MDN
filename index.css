@@ -436,6 +436,36 @@ nav {
 
 
 
+.lang-menu div p {
+    padding: 6px;
+}
+
+
+.questionnaire button {
+    margin: 0 6px;
+    border: none;
+    border-radius: 1rem;
+    font-size: 0.5rem;
+}
+
+
+.yes-button::after {
+    content: "👍";
+}
+
+.yes-button:hover {
+    background-color: green;
+}
+
+
+.no-button::after {
+    content: "👎";
+}
+
+.no-button:hover {
+    background-color: red;
+}
+
 
 /*本文*/
 .mainpart {
