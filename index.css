@@ -423,8 +423,8 @@ nav {
     border-radius: 1rem;
     position: relative;
     background-color: #4E4E4E;
-    transition: 0.4s;
     height: 1.1rem;
+    transition: background-color 0.4s;
 }
 
 .remember-lang::before {
@@ -436,7 +436,7 @@ nav {
     border: black 1px solid;
     padding: 0.5rem;
     border-radius: 1rem;
-    transition: 0.4s;
+    transition: left 0.4s;
 }
 
 #toggle:checked + .remember-lang {
