@@ -1,0 +1,30 @@
+#cansel {
+    left: 15rem;
+    visibility: visible;
+}
+
+form {
+    width: 20rem;
+}
+
+
+.search-window {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 2rem;
+    border: #B8B8B8 1px solid;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.search-window::placeholder {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0069C2;
+}
+
+.sample:focus-within  .search-window {
+    width: 15rem;
+}
+
+

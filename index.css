@@ -276,7 +276,7 @@ header a {
     content: "🌙";
 }
 
-.search {
+search {
     position: relative;
     justify-content: end;
 }
@@ -290,9 +290,11 @@ header a {
     padding: 1rem;
 }
 
-.search-window:focus {
+search form:focus-within .search-window {
     width: 15rem;
 }
+
+
 
 .search-window::placeholder {
     font-size: 1rem;
@@ -316,9 +318,14 @@ header a {
     visibility: hidden;
 }
 
-.search-window:focus + .cansel {
+search form:focus-within .cansel {
     visibility: visible;
 }
+
+.cansel:hover{
+    cursor: pointer;
+}
+
 
 .login {
     font-size: 0.8rem;
