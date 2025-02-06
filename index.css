@@ -318,10 +318,13 @@ form:focus-within .search-window {
 
 .cansel {
     position: absolute;
-    right: 2rem;
-    top: 0.4rem;
+    right: 1.5rem;
+    top: 0.2rem;
     height: 1.2rem;
+    font-size: 1.5rem;
     visibility: hidden;
+    border: none;
+    background-color: white;
 }
 
 form:focus-within .cansel {
@@ -532,13 +535,7 @@ nav {
     position: relative;
 }
 
-.filter label {
-    cursor: pointer;
-}
 
-#filter {
-    appearance: none;
-}
 
 #filter:checked + .filter-window {
     width: 15rem;
@@ -569,6 +566,13 @@ nav {
 }
 
 
+.scroll-hint {
+    position: absolute;
+    background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0));
+    height: 3rem;
+    z-index: 5;
+}
+
 
 .sidebar-left-content {
     position: sticky;
@@ -576,6 +580,7 @@ nav {
     overflow: scroll;
     max-height: 52rem;
     font-size: 0.8rem;
+    z-index: 0;
 }
 
 .sidebar-left-content a {
