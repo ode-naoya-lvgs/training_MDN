@@ -290,7 +290,7 @@ search {
     padding: 1rem;
 }
 
-search form:focus-within .search-window {
+form:focus-within .search-window {
     width: 15rem;
 }
 
@@ -318,7 +318,7 @@ search form:focus-within .search-window {
     visibility: hidden;
 }
 
-search form:focus-within .cansel {
+form:focus-within .cansel {
     visibility: visible;
 }
 
@@ -383,12 +383,13 @@ nav {
     position: relative;
 }
 
-.lang-serect > p::before {
+.lang-serect > button::before {
     content: "🌏";
 }
 
-.lang-serect  p {
+.lang-serect  button {
     padding: 0;
+    border: none;
 }
 
 
@@ -402,7 +403,8 @@ nav {
     background-color: #F9F9FB;
 }
 
-.lang-serect:hover .lang-menu {
+.lang-serect:focus-within .lang-menu,
+.lang-menu:focus-within {
     visibility: visible;
 }
 
@@ -431,6 +433,7 @@ nav {
     position: relative;
     background-color: #4E4E4E;
     height: 1.1rem;
+    width: 0;
     transition: background-color 0.4s;
 }
 
