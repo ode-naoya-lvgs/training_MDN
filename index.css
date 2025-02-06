@@ -232,11 +232,16 @@ header a {
 
 .theme-serect {
     position: relative;
+    display: flex;
+    text-align: center;
+    border: none;
+    background-color: white;
 }
 
 
-.theme-serect::before {
+.theme-serect > li::before {
     content: "🌗";
+    font-size: 0.8rem;
 }
 
 
@@ -253,6 +258,7 @@ header a {
 
 .theme-serect-list li {
     padding: 0.5rem 1rem;
+    text-align: left;
 }
 
 .theme-serect-list li:hover {
@@ -260,7 +266,7 @@ header a {
 }
 
 
-.theme-serect:active .theme-serect-list  {
+.theme-serect:focus-within .theme-serect-list  {
     visibility: visible;
 }
 
