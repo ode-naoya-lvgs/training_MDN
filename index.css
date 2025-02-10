@@ -42,13 +42,14 @@ button:hover {
 
 .communities {
     height: 4rem;
+    max-width: 1410px;
     display: flex;
     align-items: center;
     background-color: #E8F3FD;
     color: #0085F2;
     border-left: 2px solid #078BF3;
     border-radius: 5px;
-    margin: 2em 15rem;
+    margin: 2em auto;
     vertical-align: middle; 
 }
 
@@ -294,6 +295,7 @@ search {
     border: #B8B8B8 1px solid;
     font-size: 1rem;
     padding: 1rem;
+    caret-color: transparent;
 }
 
 form:focus-within .search-window {
@@ -308,6 +310,32 @@ form:focus-within .search-window {
     color: #0069C2;
 }
 
+
+/*  サイト内検索窓点滅のアニメーション
+search label::before {
+    content: "　　　";
+    background-color: blue;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    visibility: hidden;
+}
+
+
+.search-window:empty + label::before {
+    visibility: visible;
+    animation: blink 1.5s infinite;
+}
+
+
+@keyframes blink {
+    0% {opacity:0;}
+    49%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+*/
 
 .search-button {
     position: absolute;   
@@ -512,16 +540,21 @@ nav {
 }
 
 /*本文*/
+
+.main-contents {
+    margin: 0 15px;
+}
+
 .mainpart {
     display: flex;
     justify-content: center;
-    padding: 0 13%;
+    margin: 0 auto;
 }
 
 
 /*サイドバー*/
 .sidebar-left {
-    width: 20%;
+    width: 310px;
 }
 
 .sticky {
@@ -634,7 +667,7 @@ details li {
 
 .sidebar-right {
     order: 2;
-    width: 20%;
+    width: 260px;
 }
 
 .sidebar-right a {
@@ -666,8 +699,8 @@ details li {
 
 .main {
     order: 1;
-    width: 60%;
-    margin: 0 5%;
+    width: 765px;
+    margin: 0 50px;
 }
 
 .main a {
