@@ -36,6 +36,12 @@ button:hover {
 
 
 
+@media screen and (max-width:1439px) {
+    .footer-footer .upper {
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width:1199px) {
     .sidebar-right {
         display: none;
@@ -414,8 +420,9 @@ nav {
 
 .nav-contents {
     display: flex;
-    width: 100%;
-    padding: 0 15rem;
+    width: 1410px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .breadcrumb {
@@ -749,7 +756,7 @@ details li {
 .main {
     order: 1;
     width: 765px;
-    margin: 0 50px;
+    margin: 0 30px;
 }
 
 .main a {
@@ -862,7 +869,9 @@ details li {
 
 /*footer*/
 footer {
-    padding: 0 13%;
+    max-width: 1410px;
+    padding: 0 15px;
+    margin: auto;
     color: #4E4E4E;
     border-top: 1px solid #4E4E4E;
 }
@@ -886,7 +895,7 @@ footer a {
 }
 
 .upper-footer  .links {
-    width: 30%;
+    width: 55%;
     margin: 0 auto 0 0;
 }
 
@@ -917,7 +926,7 @@ footer a {
 
 .contents {
     margin: 0 5px;
-    width: 250px;
+    width: 28%;
 }
 
 .contents p {
@@ -937,6 +946,7 @@ footer a {
 .upper {
     display: flex;
     height: 70px;
+    margin-bottom: 2rem;
 }
 
 .mozilla-logo {
@@ -961,6 +971,6 @@ footer a {
 }
 
 .footer-footer .message {
-    margin: 2rem 0;
     font-size: 10px;
+    margin-bottom: 3rem;
 }
