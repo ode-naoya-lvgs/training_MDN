@@ -53,6 +53,21 @@ button:hover {
 
 }
 
+@media screen and (max-width:765px) {
+    .upper-footer {
+        flex-wrap: wrap;
+    }
+
+    .logoes {
+        width: 100%;
+    }
+
+    .upper-footer .contents {
+        width: 48%;
+        height: 180px;
+    }
+}
+
 
 
 /*広告欄*/

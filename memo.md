@@ -1,5 +1,11 @@
 
 
+
+
+# 2/12
+**学んだこと**
+- marginの相殺[解説ページ](https://coliss.com/articles/build-websites/operation/css/about-collapsing-margins.html)
+
 # 2/10
 **残っていること**
 - 略語をabbrタグでかこう
