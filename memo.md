@@ -1,4 +1,12 @@
 
+
+# 2/10
+**残っていること**
+- 略語をabbrタグでかこう
+    - [mdnのabbr](https://developer.mozilla.org/ja/docs/Web/HTML/Element/abbr)
+
+- themeを[prefers-color-scheme](https://developer.mozilla.org/ja/docs/Web/CSS/@media/prefers-color-scheme)
+
 # 2/7
 **気付き**
 - input要素の

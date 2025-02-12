@@ -33,6 +33,22 @@ button:hover {
     cursor: pointer;
 }
 
+
+
+
+@media screen and (max-width:1199px) {
+    .sidebar-right {
+        display: none;
+    }
+
+    .sidebar-right-responsive {
+        display: block !important;
+    }
+
+}
+
+
+
 /*広告欄*/
 .advertise {
     height: 3.5rem;
@@ -80,8 +96,9 @@ header a {
 .header-contens {
     display: flex;
     height: 100%;
-    width: 100%;
-    padding: 0 15rem;
+    width: 1410px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 /*header上部*/
@@ -691,6 +708,38 @@ details li {
 }
 
 .sidebar-right li:hover {
+    color: #0085F2;
+}
+
+
+/*widhtが1194以下の時に出てくるsidebar-rightのCSS*/
+
+.sidebar-right-responsive {
+    padding-top: 1rem;
+    display: none;
+}
+
+.sidebar-right-responsive a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar-right-responsive h2 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding: 2.5rem 0 1rem 0;
+    margin: -2rem 0 0 0;
+}
+
+.sidebar-right-responsive ol {
+    border-left: gray 2px solid;
+}
+
+.sidebar-right-responsive li {
+    font-size: 0.8rem;
+}
+
+.sidebar-right-responsive li:hover {
     color: #0085F2;
 }
 
