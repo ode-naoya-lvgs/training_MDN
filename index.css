@@ -71,7 +71,6 @@ button:hover {
     padding: 0 1rem;
 }
 
-/*headerのスタイル*/
 header {
     min-height: 5rem;
     position: sticky;
@@ -93,20 +92,17 @@ header a {
     margin: 0 auto;
 }
 
-/*header上部*/
 .header-upper {
     display: flex;
     height: 4rem;
 }
 
-/*header上部の左側*/
 .header-left {
     display: flex;
     height: 3rem;
     margin: auto 0;
 }
 
-/*header-icon*/
 .header-icon {
     height: 100%;
     display: flex;
@@ -117,7 +113,6 @@ header a {
     margin: auto 0;
 }
 
-/*header-menu*/
 .header-menu {
     height: 100%;
     padding: 0;
@@ -277,10 +272,6 @@ header a {
 
 
 
-#theme-responsive:checked + .theme-serect-list {
-    display: block;
-}
-
 
 .theme-serect-list {
     position: absolute;
@@ -347,31 +338,6 @@ form:focus-within .search-window {
 }
 
 
-/*  サイト内検索窓点滅のアニメーション
-search label::before {
-    content: "　　　";
-    background-color: blue;
-    position: absolute;
-    left: 1rem;
-    top: 0.5rem;
-    visibility: hidden;
-}
-
-
-.search-window:empty + label::before {
-    visibility: visible;
-    animation: blink 1.5s infinite;
-}
-
-
-@keyframes blink {
-    0% {opacity:0;}
-    49%{opacity: 0;}
-    50%{opacity: 1;}
-    100%{opacity: 1;}
-}
-
-*/
 
 .search-button {
     position: absolute;   
@@ -464,6 +430,7 @@ form:focus-within .cansel {
     height: 440px;
 }
 
+/*ハンバーガーmenuのクリック時にヘッダーの情報を表示する*/
 .header-upper:has(#hambergermenu-swich:checked) ~ .header-menu-responsive {
     display: block;
 }
@@ -471,7 +438,7 @@ form:focus-within .cansel {
 
 
 /*header部ナビバー*/
-nav {
+.header-footer {
     background-color: #F9F9FB;
     height: 2rem;
     border: #CDCDCD 1px solid;
@@ -479,7 +446,7 @@ nav {
     align-items: center;
 }
 
-.nav-contents {
+.header-footer-contents {
     display: flex;
     width: 1410px;
     padding: 0 15px;
@@ -813,7 +780,6 @@ details li {
 }
 
 
-/*本文のところ*/
 
 .main {
     order: 1;
@@ -886,7 +852,7 @@ details li {
 
 
 
-/*help improve MDNのところ*/
+/*help improve MDN*/
 .help {
     border: 1px solid black;
     border-radius: 10px;
@@ -1002,8 +968,6 @@ footer a {
 }
 
 
-
-/*footer-footer*/
 
 .upper {
     display: flex;
