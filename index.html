@@ -7,7 +7,7 @@
         whoever want to make websites.
         そんな願いを叶える１ページがここにあります。
         mdnはウェブサイトを作るにあたって必要な技術をわかりやすく解説している辞書ののようなサイトです。">
-        <meta name="viewport" content="wide=device-wide, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" , initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
         <title>mdn web docs html</title>
         <link rel="stylesheet" href="index.css">
         
@@ -270,7 +270,7 @@
                             <li>
                                 <search>
                                     <form action="" method="post">
-                                        <input type="search" class="search-window"  placeholder="__" name="site-search" minlength="1" value="">
+                                        <input type="search" class="search-window"  placeholder="__" name="site-search" minlength="1" id="search">
                                         <label for="search"></label>
                                         <label for="search"><input type="reset" class="cansel" value="×"></label>
                                     </form>
@@ -286,8 +286,21 @@
                         </ul>
                     </div>
                 </div>
+                <div class="header-responsive">
+                    <div class="hambergermenu">
+                        <input type="checkbox"  id="hambergermenu-swich">
+                        <label class="hambergermenu-icon" for="hambergermenu-swich">
+                            <span class="hambergar-line-1"></span>
+                            <span class="hambergar-line-2"></span>
+                            <span class="hambergar-line-3"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
-            
+            <div class="header-menu-responsive">
+                ヘッダーメニュー
+            </div>
+
             <!--ナビバー-->
             <nav>
                 <div class="nav-contents">
@@ -355,7 +368,7 @@
                 <div class="sidebar-left">
                     <div class="sticky">
                         <div class="filter">
-                            <input type="search" placeholder="Filter" class="filter-window">
+                            <input type="search" placeholder="Filter" class="filter-window" id="filter-search">
                             <img src="funnel.png" alt="funnel">
     
                             <div class="scroll-hint">　　　　　　　　　　　　　　　　</div>

@@ -36,47 +36,7 @@ button:hover {
 
 
 
-@media screen and (max-width:1439px) {
-    .footer-footer .upper {
-        margin-bottom: 0;
-    }
-}
 
-@media screen and (max-width:1199px) {
-    .sidebar-right {
-        display: none;
-    }
-
-    .sidebar-right-responsive {
-        display: block !important;
-    }
-
-}
-
-@media screen and (max-width:990px) {
-    .header-menu {
-        display: none;
-    }
-
-    .header-right {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width:765px) {
-    .upper-footer {
-        flex-wrap: wrap;
-    }
-
-    .logoes {
-        width: 100%;
-    }
-
-    .upper-footer .contents {
-        width: 48%;
-        height: 180px;
-    }
-}
 
 
 
@@ -88,8 +48,8 @@ button:hover {
 
 
 .communities {
-    height: 4rem;
-    max-width: 1410px;
+    min-height: 4rem;
+    max-width: 1355px;
     display: flex;
     align-items: center;
     background-color: #E8F3FD;
@@ -97,7 +57,8 @@ button:hover {
     border-left: 2px solid #078BF3;
     border-radius: 5px;
     margin: 2em auto;
-    vertical-align: middle; 
+    padding: 1rem 1rem 1rem 3rem;
+    text-indent: -3rem;
 }
 
 .communities a {
@@ -107,12 +68,12 @@ button:hover {
 
 .communities a::before {
     content: "ℹ️";
-    margin: 0 1rem;
+    padding: 0 1rem;
 }
 
 /*headerのスタイル*/
 header {
-    height: 5rem;
+    min-height: 5rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -302,6 +263,25 @@ header a {
 }
 
 
+
+.theme-responsive button  {
+    font-size: 0.8rem;
+    display: flex;
+    vertical-align: middle;
+}
+
+.hambergermenu button::before {
+    content: "🌗";
+    font-size: 0.8rem;
+}
+
+
+
+#theme-responsive:checked + .theme-serect-list {
+    display: block;
+}
+
+
 .theme-serect-list {
     position: absolute;
     top: 2rem;
@@ -443,6 +423,52 @@ form:focus-within .cansel {
 .sign-up a {
     color: white;
 }
+
+
+
+.header-responsive {
+    margin: 0 0 0 auto;
+    padding: 12px;
+    display: none;
+}
+
+#hambergermenu-swich {
+    display: none;
+}
+
+.hambergermenu-icon {
+    height: 20px;
+    width: 20px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-responsive span {
+    left: 0;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: black;
+}
+
+.hambergermenu-icon:hover {
+    cursor: pointer;
+    background-color: #CDCDCD;
+}
+
+
+.header-menu-responsive {
+    display: none;
+    height: 440px;
+}
+
+.header-upper:has(#hambergermenu-swich:checked) ~ .header-menu-responsive {
+    display: block;
+}
+
+
 
 /*header部ナビバー*/
 nav {
@@ -1009,4 +1035,66 @@ footer a {
 .footer-footer .message {
     font-size: 10px;
     margin-bottom: 3rem;
+}
+
+
+
+
+@media screen and (max-width:1439px) {
+    .footer-footer .upper {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .sidebar-right {
+        display: none;
+    }
+
+    .sidebar-right-responsive {
+        display: block;
+        position: static;
+    }
+
+}
+
+@media screen and (max-width:990px) {
+    .header-menu {
+        display: none;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .header-responsive {
+        display: block;
+    }
+}
+
+@media screen and (max-width:765px) {
+
+    .mainpart {
+        position: relative;
+    }
+    
+    
+    .sidebar-left {
+        position: absolute;
+        top:0;
+        left: -250px;
+    }
+
+    .upper-footer {
+        flex-wrap: wrap;
+    }
+
+    .logoes {
+        width: 100%;
+    }
+
+    .upper-footer .contents {
+        width: 48%;
+        height: 180px;
+    }
 }
